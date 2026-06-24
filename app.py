@@ -20,6 +20,18 @@ st.markdown("""
     background: #FAFBFC;
 }
 
+#MainMenu {
+    visibility: hidden;
+}
+
+header {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
 .hero {
     background: linear-gradient(
     135deg,
@@ -120,10 +132,14 @@ if page == "🏠 Home":
     medicine conflicts, and important safety warnings before
     taking medications.
 
-    </div>
-    """, unsafe_allow_html=True)
+   </div>
+""", unsafe_allow_html=True)
 
-    col1, col2, col3 = st.columns(3)
+st.success(
+    "📱 Add SmartRx NG to your Home Screen for faster access."
+)
+
+col1, col2, col3 = st.columns(3)
 
     with col1:
         st.markdown("""
@@ -188,27 +204,27 @@ elif page == "🔍 Verify Your Medicines":
     )
 
     med1 = st.selectbox(
-        "Medicine 1",
+       "Add Medicine 1",
         [""] + medicine_list
     )
 
     med2 = st.selectbox(
-        "Medicine 2",
+       "Add Medicine 2",
         [""] + medicine_list
     )
 
     med3 = st.selectbox(
-        "Medicine 3",
+        "Add Medicine 3",
         [""] + medicine_list
     )
 
     med4 = st.selectbox(
-        "Medicine 4",
+        "Add Medicine 4",
         [""] + medicine_list
     )
 
     med5 = st.selectbox(
-        "Medicine 5",
+        "Add Medicine 5",
         [""] + medicine_list
     )
 
@@ -314,36 +330,32 @@ elif page == "🔍 Verify Your Medicines":
                     unsafe_allow_html=True
                 )
 
-            st.subheader("Recommendations")
+           st.info(
+    "⚠ Disclaimer: This tool provides information only. "
+    "Always consult a pharmacist or doctor before making medication decisions."
+)
 
-            st.write(
-                "• Follow dosage instructions carefully."
-            )
+st.subheader("Recommendations")
 
-            st.write(
-                "• Avoid medicines with duplicate active ingredients."
-            )
+st.write(
+    "• Follow dosage instructions carefully."
+)
 
-            st.write(
-                "• Consult a pharmacist when uncertain."
-            )
+st.write(
+    "• Avoid medicines with duplicate active ingredients."
+)
 
-            st.write(
-                "• Complete prescribed antibiotic courses."
-            )
+st.write(
+    "• Consult a pharmacist when uncertain."
+)
 
-            st.write(
-                "• Read medicine labels before use."
-            )
+st.write(
+    "• Complete prescribed antibiotic courses."
+)
 
-            st.subheader("Medicine Warnings")
-
-            for _, row in chosen.iterrows():
-
-                st.write(
-                    f"**{row['Medicine']}** — {row['Warning']}"
-                )
-
+st.write(
+    "• Read medicine labels before use."
+)
 # ======================
 # HOW TO USE
 # ======================
