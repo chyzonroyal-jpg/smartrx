@@ -1,1 +1,58 @@
-
+Medicine,Ingredient,Category,Warning
+Panadol,Paracetamol,Pain Relief,Avoid overdose
+Emzor Paracetamol,Paracetamol,Pain Relief,Avoid overdose
+Boska,Paracetamol,Pain Relief,Avoid overdose
+M&B Paracetamol,Paracetamol,Pain Relief,Avoid overdose
+Calpol,Paracetamol,Pain Relief,Child dosage only
+Efferalgan,Paracetamol,Pain Relief,Avoid overdose
+Ibuprofen,Ibuprofen,NSAID,Take after food
+Brufen,Ibuprofen,NSAID,Take after food
+Nurofen,Ibuprofen,NSAID,Take after food
+Diclofenac,Diclofenac,NSAID,May irritate stomach
+Voltaren,Diclofenac,NSAID,May irritate stomach
+Ponstan,Mefenamic Acid,NSAID,Take after food
+Naproxen,Naproxen,NSAID,Take after food
+Aspirin,Aspirin,NSAID,Avoid with ulcers
+Procold,Paracetamol + Chlorpheniramine,Cold and Flu,Causes drowsiness
+Mixagrip,Paracetamol + Phenylephrine + Chlorpheniramine,Cold and Flu,Causes drowsiness
+Actifed,Triprolidine + Pseudoephedrine,Cold and Flu,May cause drowsiness
+Benylin,Dextromethorphan,Cold and Flu,Cough medicine
+Tuxil-D,Dextromethorphan + Diphenhydramine,Cold and Flu,Causes drowsiness
+Amatem,Artemether + Lumefantrine,Antimalarial,Complete full dose
+Lonart,Artemether + Lumefantrine,Antimalarial,Complete full dose
+Coartem,Artemether + Lumefantrine,Antimalarial,Complete full dose
+P-Alaxin,Dihydroartemisinin + Piperaquine,Antimalarial,Complete full dose
+Maldox,Sulfadoxine + Pyrimethamine,Antimalarial,Prescription advised
+Flagyl,Metronidazole,Antibiotic,Avoid alcohol
+Metrogyl,Metronidazole,Antibiotic,Avoid alcohol
+Amoxicillin,Amoxicillin,Antibiotic,Complete prescription
+Ampiclox,Ampicillin + Cloxacillin,Antibiotic,Complete prescription
+Augmentin,Amoxicillin + Clavulanate,Antibiotic,Complete prescription
+Ciprofloxacin,Ciprofloxacin,Antibiotic,Complete prescription
+Azithromycin,Azithromycin,Antibiotic,Complete prescription
+Doxycycline,Doxycycline,Antibiotic,Avoid in pregnancy
+Tetracycline,Tetracycline,Antibiotic,Avoid in pregnancy
+Septrin,Trimethoprim + Sulfamethoxazole,Antibiotic,Complete prescription
+Omeprazole,Omeprazole,Gastrointestinal,Take before meals
+Esomeprazole,Esomeprazole,Gastrointestinal,Take before meals
+Gaviscon,Sodium Alginate,Gastrointestinal,For heartburn
+Gestid,Antacid,Gastrointestinal,For indigestion
+Andrews Liver Salt,Antacid,Gastrointestinal,For indigestion
+Loperamide,Loperamide,Diarrhoea,Do not overuse
+ORS,Oral Rehydration Salts,Diarrhoea,Prevent dehydration
+Cetirizine,Cetirizine,Antihistamine,May cause drowsiness
+Loratadine,Loratadine,Antihistamine,Less drowsy
+Piriton,Chlorpheniramine,Antihistamine,Causes drowsiness
+Buscopan,Hyoscine Butylbromide,Antispasmodic,For abdominal cramps
+Motilium,Domperidone,Antiemetic,For nausea
+Strepsils,Amylmetacresol + Dichlorobenzyl Alcohol,Throat Relief,For sore throat
+Vitamin C,Ascorbic Acid,Supplement,Use as directed
+Zinc,Zinc Sulphate,Supplement,Use as directed
+Wellman,Multivitamin,Supplement,Daily supplement
+Wellwoman,Multivitamin,Supplement,Daily supplement
+Immunace,Multivitamin,Supplement,Daily supplement
+Reload,Multivitamin,Supplement,Daily supplement
+Feroglobin,Iron Supplement,Supplement,Use as directed
+Folic Acid,Folic Acid,Supplement,Use as directed
+Vitamin D,Vitamin D,Supplement,Use as directed
+Calcium,Calcium Carbonate,Supplement,Use as directed
