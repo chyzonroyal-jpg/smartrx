@@ -17,7 +17,7 @@ st.markdown("""
 <style>
 
 .stApp {
-   background: #F8F5EE
+    background: #FAFBFC;
 }
 
 .hero {
@@ -36,9 +36,9 @@ st.markdown("""
 }
 
 .card {
-    background: #FFF9E6;
+    background: #FFFFFF;
     backdrop-filter: blur(10px);
-    border: 1px solid #F9CC48;
+    border: 1px solid rgba(20,70,124,0.10);
     box-shadow: 0 12px 35px rgba(0,0,0,0.08);
     padding: 20px;
     border-radius: 20px;
@@ -149,17 +149,32 @@ if page == "🏠 Home":
         </div>
         """, unsafe_allow_html=True)
 
-    st.subheader("Why SmartRx NG?")
+    st.markdown("""
+<div style="
+background:#FFF8DC;
+padding:25px;
+border-radius:20px;
+border-left:8px solid #F9CC48;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+margin-top:20px;
+">
 
-    st.write("""
-    Many medicines sold in Nigeria have different brand names
-    but contain the same active ingredient.
+<h3 style="color:#14467C;">💡 Why SmartRx NG?</h3>
 
-    Taking multiple medicines unknowingly may increase overdose
-    risks and medication-related complications.
+<p style="color:#111111;">
+Many medicines sold in Nigeria have different brand names but contain the same active ingredient.
+</p>
 
-    SmartRx NG helps users make safer decisions before use.
-    """)
+<p style="color:#111111;">
+Taking multiple medicines unknowingly may increase overdose risks and medication-related complications.
+</p>
+
+<p style="color:#111111;">
+SmartRx NG helps users make safer decisions before use.
+</p>
+
+</div>
+""", unsafe_allow_html=True)
 
 # ======================
 # VERIFY PAGE
@@ -381,10 +396,8 @@ elif page == "ℹ️ About":
 # FOOTER
 # ======================
 st.markdown(
-    """
-    <div class="footer">
-    SmartRx NG © 2026 • Promoting safer medication decisions 🇳🇬
-    </div>
-    """,
+    "<div style='text-align:center; color:#555555; margin-top:30px;'>"
+    "SmartRx NG © 2026 • Promoting safer medication decisions 🇳🇬"
+    "</div>",
     unsafe_allow_html=True
 )
