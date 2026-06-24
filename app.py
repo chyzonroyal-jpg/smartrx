@@ -36,10 +36,10 @@ st.markdown("""
 }
 
 .card {
-    background: rgba(255,255,255,0.95);
+    background: #FFF9E6;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(33,150,243,0.25);
-    box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+    border: 1px solid #F9CC48;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.08);
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 15px;
