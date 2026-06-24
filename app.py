@@ -17,7 +17,15 @@ st.markdown("""
 <style>
 
 .stApp {
-    .hero {
+    background: linear-gradient(
+    180deg,
+    #EAF6FF,
+    #D6EEFF,
+    #FFFFFF
+    );
+}
+
+.hero {
     background: linear-gradient(
     135deg,
     #D6EEFF,
@@ -33,9 +41,9 @@ st.markdown("""
 }
 
 .card {
-    background: rgba(255,255,255,0.75);
+    background: rgba(214,238,255,0.85);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.4);
+    border: 1px solid rgba(33,150,243,0.25);
     box-shadow: 0 8px 32px rgba(31,38,135,0.10);
     padding: 20px;
     border-radius: 20px;
