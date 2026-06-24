@@ -141,31 +141,31 @@ st.success(
 
 col1, col2, col3 = st.columns(3)
 
-    with col1:
-        st.markdown("""
-        <div class="card">
-        <h3>🔍 Verify Medicines</h3>
-        Check medicines for duplicate ingredients and safety concerns.
-        </div>
-        """, unsafe_allow_html=True)
-
-    with col2:
-        st.markdown("""
-        <div class="card">
-        <h3>⚠ Detect Risks</h3>
-        Identify common medicine conflicts and overdose risks.
-        </div>
-        """, unsafe_allow_html=True)
-
-    with col3:
-        st.markdown("""
-        <div class="card">
-        <h3>📋 Get Guidance</h3>
-        Receive practical medication recommendations.
-        </div>
-        """, unsafe_allow_html=True)
-
+with col1:
     st.markdown("""
+    <div class="card">
+    <h3>🔍 Verify Medicines</h3>
+    Check medicines for duplicate ingredients and safety concerns.
+    </div>
+    """, unsafe_allow_html=True)
+
+with col2:
+    st.markdown("""
+    <div class="card">
+    <h3>⚠ Detect Risks</h3>
+    Identify common medicine conflicts and overdose risks.
+    </div>
+    """, unsafe_allow_html=True)
+
+with col3:
+    st.markdown("""
+    <div class="card">
+    <h3>📋 Get Guidance</h3>
+    Receive practical medication recommendations.
+    </div>
+    """, unsafe_allow_html=True)
+
+st.markdown("""
 <div style="
 background:#FFF8DC;
 padding:25px;
