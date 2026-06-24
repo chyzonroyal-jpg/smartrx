@@ -17,19 +17,19 @@ st.markdown("""
 <style>
 
 .stApp {
-   background: #FFFFFF;
+   background: #F8F5EE
 }
 
 .hero {
     background: linear-gradient(
     135deg,
-    #D6EEFF,
-    #2196F3
+    #14467C,
+    #1E5A9B
     );
     color: white;
     padding: 35px;
     border-radius: 20px;
-    border-left: 10px solid #2196F3;
+    border-left: 10px solid #F9CC48;
     margin-bottom: 20px;
     box-shadow: 0 8px 32px rgba(31, 38, 135, 0.20);
     backdrop-filter: blur(12px);
