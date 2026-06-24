@@ -100,9 +100,9 @@ page = st.sidebar.radio(
     "Navigation",
     [
         "🏠 Home",
-        "🔍 Verify Your Medicines",
+        "ℹ️ About",
         "📘 How To Use",
-        "ℹ️ About"
+        "🔍 Verify Your Medicines"
     ]
 )
 
