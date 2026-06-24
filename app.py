@@ -17,23 +17,29 @@ st.markdown("""
 <style>
 
 .stApp {
-    background-color: #FFFFFF;
-}
-
-.hero {
-    background: #EAF6FF;
+    .hero {
+    background: linear-gradient(
+    135deg,
+    #D6EEFF,
+    #2196F3
+    );
+    color: white;
     padding: 35px;
-    border-radius: 18px;
-    border-left: 10px solid #B8E0FF;
+    border-radius: 20px;
+    border-left: 10px solid #2196F3;
     margin-bottom: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.20);
+    backdrop-filter: blur(12px);
 }
 
 .card {
-    background: #F8FBFF;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.4);
+    box-shadow: 0 8px 32px rgba(31,38,135,0.10);
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 20px;
     margin-bottom: 15px;
-    border: 1px solid #DDEEFF;
 }
 
 .safe {
@@ -374,7 +380,7 @@ elif page == "ℹ️ About":
 st.markdown(
     """
     <div class="footer">
-    SmartRx NG • Designed for safer medication decisions in Nigeria 🇳🇬
+    SmartRx NG © 2026 • Promoting safer medication decisions in Nigeria
     </div>
     """,
     unsafe_allow_html=True
