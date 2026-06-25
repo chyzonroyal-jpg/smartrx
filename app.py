@@ -132,69 +132,61 @@ if page == "🏠 Home":
     medicine conflicts, and important safety warnings before
     taking medications.
 
-   </div>
-""", unsafe_allow_html=True)
-
-st.success(
-    "📱 Add SmartRx NG to your Home Screen for faster access."
-)
-
-col1, col2, col3 = st.columns(3)
-
-with col1:
-    st.markdown("""
-    <div class="card">
-    <h3>🔍 Verify Medicines</h3>
-    Check medicines for duplicate ingredients and safety concerns.
     </div>
     """, unsafe_allow_html=True)
 
-with col2:
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        st.markdown("""
+        <div class="card">
+        <h3>🔍 Verify Medicines</h3>
+        Check medicines for duplicate ingredients and safety concerns.
+        </div>
+        """, unsafe_allow_html=True)
+
+    with col2:
+        st.markdown("""
+        <div class="card">
+        <h3>⚠ Detect Risks</h3>
+        Identify common medicine conflicts and overdose risks.
+        </div>
+        """, unsafe_allow_html=True)
+
+    with col3:
+        st.markdown("""
+        <div class="card">
+        <h3>📋 Get Guidance</h3>
+        Receive practical medication recommendations.
+        </div>
+        """, unsafe_allow_html=True)
+
     st.markdown("""
-    <div class="card">
-    <h3>⚠ Detect Risks</h3>
-    Identify common medicine conflicts and overdose risks.
+    <div style="
+    background:#FFF8DC;
+    padding:25px;
+    border-radius:20px;
+    border-left:8px solid #F9CC48;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    margin-top:20px;
+    ">
+
+    <h3 style="color:#14467C;">💡 Why SmartRx NG?</h3>
+
+    <p style="color:#111111;">
+    Many medicines sold in Nigeria have different brand names but contain the same active ingredient.
+    </p>
+
+    <p style="color:#111111;">
+    Taking multiple medicines unknowingly may increase overdose risks and medication-related complications.
+    </p>
+
+    <p style="color:#111111;">
+    SmartRx NG helps users make safer decisions before use.
+    </p>
+
     </div>
     """, unsafe_allow_html=True)
-
-with col3:
-    st.markdown("""
-    <div class="card">
-    <h3>📋 Get Guidance</h3>
-    Receive practical medication recommendations.
-    </div>
-    """, unsafe_allow_html=True)
-
-st.markdown("""
-<div style="
-background:#FFF8DC;
-padding:25px;
-border-radius:20px;
-border-left:8px solid #F9CC48;
-box-shadow:0 8px 20px rgba(0,0,0,0.08);
-margin-top:20px;
-">
-
-<h3 style="color:#14467C;">💡 Why SmartRx NG?</h3>
-
-<p style="color:#111111;">
-Many medicines sold in Nigeria have different brand names but contain the same active ingredient.
-</p>
-
-<p style="color:#111111;">
-Taking multiple medicines unknowingly may increase overdose risks and medication-related complications.
-</p>
-
-<p style="color:#111111;">
-SmartRx NG helps users make safer decisions before use.
-</p>
-
-</div>
-""", unsafe_allow_html=True)
-
-# ======================
-# VERIFY PAGE
-# ======================
 elif page == "🔍 Verify Your Medicines":
 
     st.title("🔍 Verify Your Medicines")
@@ -330,32 +322,25 @@ elif page == "🔍 Verify Your Medicines":
                     unsafe_allow_html=True
                 )
 
-           st.info(
-    "⚠ Disclaimer: This tool provides information only. "
-    "Always consult a pharmacist or doctor before making medication decisions."
-)
+ st.info(
+                "⚠ Disclaimer: This tool provides information only. "
+                "Always consult a pharmacist or doctor before making medication decisions."
+            )
 
-st.subheader("Recommendations")
+            st.subheader("Recommendations")
 
-st.write(
-    "• Follow dosage instructions carefully."
-)
+            st.write("• Follow dosage instructions carefully.")
+            st.write("• Avoid medicines with duplicate active ingredients.")
+            st.write("• Consult a pharmacist when uncertain.")
+            st.write("• Complete prescribed antibiotic courses.")
+            st.write("• Read medicine labels before use.")
 
-st.write(
-    "• Avoid medicines with duplicate active ingredients."
-)
+            st.subheader("Medicine Warnings")
 
-st.write(
-    "• Consult a pharmacist when uncertain."
-)
-
-st.write(
-    "• Complete prescribed antibiotic courses."
-)
-
-st.write(
-    "• Read medicine labels before use."
-)
+            for _, row in chosen.iterrows():
+                st.write(
+                    f"**{row['Medicine']}** — {row['Warning']}"
+                )
 # ======================
 # HOW TO USE
 # ======================
