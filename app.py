@@ -322,7 +322,7 @@ elif page == "🔍 Verify Your Medicines":
                     unsafe_allow_html=True
                 )
 
- st.info(
+            st.info(
                 "⚠ Disclaimer: This tool provides information only. "
                 "Always consult a pharmacist or doctor before making medication decisions."
             )
@@ -341,6 +341,7 @@ elif page == "🔍 Verify Your Medicines":
                 st.write(
                     f"**{row['Medicine']}** — {row['Warning']}"
                 )
+
 # ======================
 # HOW TO USE
 # ======================
